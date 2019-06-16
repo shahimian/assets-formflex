@@ -1,0 +1,25 @@
+.form-group {
+    display: flex;
+    margin: 2px;
+}
+
+@media all and (min-width: 800px){
+    .form-group {
+        flex-direction: row;        
+    }    
+    label.control-label {
+        width: 100px;
+    }
+}
+
+@media all and (max-width: 800px){
+    .form-group {
+        flex-direction: column;  
+        margin: 5px 0;      
+        padding: 0 1em;
+    }    
+    label.control-label {
+        width: 100%;
+        margin: 5px 0;
+    }    
+}
